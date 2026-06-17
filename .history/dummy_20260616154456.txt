@@ -1,0 +1,7 @@
+hello git
+
+working directory
+        |
+Staging Area
+        |
+repository
