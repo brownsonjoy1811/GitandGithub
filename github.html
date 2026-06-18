@@ -21,10 +21,81 @@
 
 
     <h3>Push Project To Github</h3>
-    <pre><code>git push -u origin main</code></pre>
+    <h4>Step 1: Create a Repository</h4>
+    <ol>
+        <li>Go to github</li>
+        <li>Click New Repository</li>
+        <li>Enter a repository name (e.g my-first-project)</li>
+        <li>Click Create Repository</li>
+        <li>Leave the page open</li>
+    </ol>
 
-    git status
-    git add .
-    git commit -m "first commit"
+    <hr>
+    <h4>Step 2: Open your project in VS Code</h4>
+    <p>Open the folder that contains your project files</p>
+
+    <hr>
+    <h4>Step 3: Open Terminal in VS Code (ctrl + j)</h4>
+
+    <hr>
+    <h4>Step 4: Initialize Git</h4>
+    <code>git init</code>
+    <p>This tells git to start tracking this project</p>
+
+    <hr>
+    <h4>Step 5: Check Files</h4>
+    <code>git status</code>
+    <p>You will see untracked files</p>
+
+    <hr>
+
+    <h4>Step 6: Stage files</h4>
+    <code>git add .</code>
+    <p>add: means move files to the staging area</p>
+    <p>. : means everything</p>
+    <p>the staging area is like a waiting room</p>
+
+    <hr>
+    <h4>Step 7: Commit Files</h4>
+    <code>git commit -m "first commit"</code>
+    <p>commit: means save a snapshot</p>
+    <p>-m: means message</p>
+    <p>Example: git commit -m "just created a footer"</p>
+
+    <hr>
+    <h4>Step 8: Connect Local Project to Github</h4>
+    <p>Copy the URL from Github. Example: https://github.com/yourname/my-first-project.git</p>
+    <p>Run this in your terminal:</p>
+    <code>git remote add origin https://github.com/yourname/my-first-project.git</code>
+    <p>remote: means online repository</p>
+    <p>origin: means nickname for github</p>
+    <p>Check:  <code>git remote -v</code></p>
+
+    <hr>
+    <h4>Step 9: Rename Branch to Main</h4>
+    <code>git branch -M main</code>
+    <p>branch: means line of development</p>
+    <p>main: means primary branch</p>
+
+    <hr>
+    <h4>Step 10: Push to Github</h4>
+    <code>git push -u origin main</code>
+    <p>push: upload</p>
+    <p>origin: github repository</p>
+    <p>main: branch main</p>
+    <p>Go and refresh your github, these files will now appear on Github.</p>
+
+
+    <hr>
+    <h4>What do i do every time i make changes?</h4>
+    <p>Suppose you edit your files. Or each time you edit your file.</p>
+    <ol>
+        <li>Check changes:  <code>git status</code></li>
+        <li>Stage changes: <code>git add .</code></li>
+        <li>Commit changes: <code>git commit -m "Updated homepage"</code></li>
+        <li>Push changes: <code>git push</code></li>
+    </ol>
+
+    <p>That's it. Repeat these four cycle whenever you update a project.</p>
 </body>
 </html>
